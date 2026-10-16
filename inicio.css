@@ -1,0 +1,347 @@
+:root{
+   --turquesa: #0097b2;
+    --gris-claro: #d9d9d9;
+    --blanco: #ffffff;
+    --texto: #333333;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Montserrat',sans-serif;
+  background-color: var(--gris-claro);
+  color: var(--texto);
+  line-height: 1.6;
+}
+h1, h2, h3{
+  font-family: 'Black Mango ', 'Montserrat', sans-serif;
+}
+.header{
+  width: 100%;
+}
+.menu{
+  background-color: var(--turquesa);
+  min-height: 85px;
+  padding: 15px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+  color: var(--blanco);
+  font-family: 21px;
+  font-weight: 700;
+}
+.logo{
+  width: 98px;
+    height: 98px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.nav\.contenedor {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav\.contenedor a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 13px;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.nav\.contenedor a:hover {
+    background-color: var(--blanco);
+    color: var(--turquesa);
+}
+.hero {
+    min-height: 390px;
+    padding: 70px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--turquesa);
+    color: var(--blanco);
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.btn-1,
+.btn-2 {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 5px;
+    border: 2px solid var(--blanco);
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.btn-1 {
+    background-color: var(--blanco);
+    color: var(--turquesa);
+}
+
+.btn-2 {
+    background-color: transparent;
+    color: var(--blanco);
+}
+
+.btn-1:hover,
+.btn-2:hover {
+    background-color: var(--gris-claro);
+    color: var(--turquesa);
+}
+.productos.destacados{
+  padding: 50px 5%;
+  background-color: var(--gris-claro);
+}
+
+.productos.destacados h2{
+  text-align: center;
+  color:var(--turquesa);
+  font-size: 34px;
+  margin-bottom: 35px;
+}
+.contenedor-productos{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap :25px;
+  align-items: stretch;
+}
+.tarjeta-producto {
+    background-color: var(--blanco);
+    border: 1px solid #c8c8c8;
+    border-radius: 14px;
+    padding: 22px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 0;
+    transition: 0.3s;
+}
+
+.tarjeta-producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 151, 178, 0.18);
+}
+
+.producto-imagen {
+    width: 100% !important;
+    max-width: 250px;
+    height: 190px !important;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.producto-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.Producto-titulo {
+    color: var(--turquesa);
+    font-size: 19px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.descripcion {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.producto-info ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.producto-info li {
+    margin-bottom: 7px;
+    overflow-wrap: anywhere;
+}
+
+.Btn-3 {
+    display: block;
+    width: 100%;
+    margin-top: auto;
+    padding: 12px 10px;
+    background-color: var(--turquesa);
+    color: var(--blanco);
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.Btn-3:hover {
+    background-color: var(--blanco);
+    color: var(--turquesa);
+    outline: 2px solid var(--turquesa);
+}
+.btn-whatsapp {
+    display: inline-block;
+    background-color: #0097b2;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px 16px;
+    border-radius: 6px;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+    background-color: #007c91;
+    color: #ffffff;
+}
+
+@media (max-width: 1024px) {
+    .contenedor-productos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .productos.destacados {
+        padding: 40px 3%;
+    }
+
+    .nav\.contenedor a {
+        padding: 8px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 12px;
+    }
+
+    .nav\.contenedor {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 320px;
+        padding: 50px 18px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .btn-1,
+    .btn-2 {
+        width: 100%;
+        max-width: 260px;
+        margin: 6px 0;
+    }
+
+    .productos.destacados {
+        padding: 35px 15px;
+    }
+
+    .productos.destacados h2 {
+        font-size: 28px;
+    }
+
+    .contenedor-productos {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 22px;
+    }
+
+    .tarjeta-producto {
+        padding: 20px;
+    }
+
+    .producto-imagen {
+        max-width: 220px;
+        height: 180px !important;
+    }
+
+    .Producto-titulo {
+        font-size: 18px;
+    }
+}
+footer {
+  background-color: var(--turquesa); /* Fondo oscuro elegante */
+  color: #ffffff;            /* Texto blanco */
+  padding: 30px 20px;        /* Espaciado interno (arriba/abajo y lados) */
+  text-align: center;        /* Centra todo el contenido */
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+/* Contenedor interno para organizar los elementos */
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;            /* Centra el contenedor en la pantalla */
+  display: flex;
+  flex-direction: column;    /* Organiza los elementos en fila vertical */
+  gap: 12px;                 /* Separa los párrafos uniformemente */
+}
+
+/* Estilos para los textos del pie de página */
+footer p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Estilos base para todos los enlaces del footer */
+footer a {
+  color: #00adb5;            /* Color azul turquesa llamativo */
+  text-decoration: none;     /* Quita la línea de subrayado predeterminada */
+  transition: color 0.3s ease; /* Suaviza el cambio de color al pasar el cursor */
+}
+
+/* Efecto al pasar el cursor sobre los enlaces */
+footer a:hover {
+  color: var(--blanco);            /* El azul se oscurece un poco */
+  text-decoration: none; /* Aparece el subrayado */
+}
+
+/* Estilo específico para resaltar el enlace de WhatsApp */
+footer a[href^="https://wa.me"] {
+  color: #25d366;            /* Verde oficial de WhatsApp */
+  font-weight: bold;
+}
+
+/* Efecto específico al pasar el cursor sobre WhatsApp */
+footer a[href^="https://wa.me"]:hover {
+  color: #128c7e;            /* Verde oscuro de WhatsApp */
+}

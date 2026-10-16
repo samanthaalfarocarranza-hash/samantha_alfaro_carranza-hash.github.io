@@ -1,0 +1,354 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecnoPunto Atenas</title>
+    <link rel="stylesheet" href="catalogo.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="contenedor">
+            <img src="img/Logo tecnológico TecnoPunto Atenas.png" alt="TecnoPunto Atenas" class="esquina-img">
+
+            <nav class="nav-contenedor">
+                <a href="inicio.html">Inicio</a>
+                    <a href="servicios.html">Servicios</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="catalogo.html">Catálogo</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="catalogo">
+
+        <h1>Catálogo de productos</h1>
+
+        <div class="filtros">
+            <button type="button" class="filtro-btn activo" data-categoria="todos">Todos</button>
+            <button type="button" class="filtro-btn" data-categoria="Portatiles">Portátiles</button>
+            <button type="button" class="filtro-btn" data-categoria="Accesorios">Accesorios</button>
+            <button type="button" class="filtro-btn" data-categoria="componentes">Componentes</button>
+        </div>
+
+        <p id="contador-productos">Mostrando 10 productos</p>
+
+        <section class="productos-grid">
+            <article class="producto-card" data data-categoria="">
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuK7LkCofvHlaV46SMhVnck6umc1U1ujdfQ5k_Ea_qLQ&s=10"
+                alt="Computadora Lenovo IdeaPad 3"
+                class="producto-imagen"
+            >
+
+            <div class="producto-info">
+                <h3 class="producto-titulo">
+                    Computadora Lenovo IdeaPad 3
+                </h3>
+
+                <ul class="descripcion">
+                    <li>Pantalla: 15.6 pulgadas, resolución 1920 x 1080</li>
+                    <li>Procesador: Intel Core i3 N305</li>
+                    <li>Memoria RAM: 8 GB DDR5</li>
+                    <li>Gráficos integrados: Intel UHD</li>
+                    <li>Almacenamiento: 128 GB</li>
+                    <li>Conectividad: Wi-Fi 6 y Bluetooth 5.1</li>
+                </ul>
+
+                <p class="precio">
+                    <span class="precio-anterior">₡243.500</span>
+                    <span class="precio-oferta">₡135.000</span>
+                </p>
+
+                <a
+                    href="https://wa.me/50687594465?text=Hola%2C%20me%20interesa%20la%20laptop%20Lenovo%20IdeaPad%203"
+                    class="btn-whatsapp"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Consulta por WhatsApp
+                </a>
+            </div>
+        </article>
+
+            <!-- CATEGORÍA: PORTÁTILES -->
+
+            <article class="producto-card" data-categoria="Portatiles">
+                <img src="https://m.media-amazon.com/images/I/71GbvoTwsQL._AC_UF1000,1000_QL80_.jpg" alt="Asus Vivobook" class="producto-imagen">
+
+                <div class="producto-info">
+                    <h2 class="Producto-titulo">Computadora Asus Vivobook Intel i3 N305</h2>
+
+                    <ul class="descripcion">
+                        <li>Pantalla: 15.6 pulgadas, resolución 1920 x 1080</li>
+                        <li>Procesador: Intel Core i3 N305, 3.8 GHz, 8 núcleos</li>
+                        <li>Memoria RAM: 8 GB DDR4 3200</li>
+                        <li>Gráficos: Intel UHD Graphics</li>
+                        <li>Almacenamiento: 256 GB M.2 NVMe</li>
+                        <li>Conectividad: Wi-Fi 6 y Bluetooth 5.1</li>
+                    </ul>
+
+                    <p class="precio"><del>₡325.000</del> ₡273.600</p>
+                    <a
+                    href="https://wa.me/50687594465?text=Hola%2C%20me%20interesa%20la%20laptop%20Asus%Vivobook%203"
+                    class="btn-whatsapp"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Consulta por WhatsApp
+                </a>
+                   
+                </div>
+            </article>
+
+            <article class="producto-card" data-categoria="Portatiles">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN6kdjc-hAHaTdjpxsmd4jiH59snJVpKiW9Df7cOmVbw&s=10" alt="Dell 15 DC15255" class="producto-imagen">
+
+                <div class="producto-info">
+                    <h2 class="Producto-titulo">Computadora Dell 15 DC15255 AMD Ryzen 3</h2>
+
+                    <ul class="descripcion">
+                        <li>Pantalla: 15.6 pulgadas, resolución 1920 x 1080</li>
+                        <li>Procesador: AMD Ryzen 3 7320U</li>
+                        <li>Memoria RAM: 8 GB</li>
+                        <li>Gráficos: AMD Radeon Graphics</li>
+                        <li>Almacenamiento: 512 GB</li>
+                        <li>Conectividad: Wi-Fi 5 y Bluetooth 5.0</li>
+                    </ul>
+
+                    <p class="precio">₡220.000</p>
+
+                    <a href="https://wa.me/50687594465?text=Hola,%20me%20interesa%20la%20laptop%20Dell%2015%20DC15255" class="btn-whatsapp" target="_blank"  rel=" noopener noreferrer ">
+                        Consulta por WhatsApp
+                    </a>
+                </div>
+            </article>
+
+            <article class="producto-card" data-categoria="Portatiles">
+                <img src="https://img.pacifiko.com/PROD/resize/1/500x500/MjA0NjcwYj_378.png" alt="HP 15t-fd000" class="producto-imagen">
+
+                <div class="producto-info">
+                    <h2 class="Producto-titulo">Computadora HP 15t-fd000 Intel i7</h2>
+
+                    <ul class="descripcion">
+                        <li>Pantalla: 15.6 pulgadas, resolución 1920 x 1080 IPS</li>
+                        <li>Procesador: Intel Core i7-1355U</li>
+                        <li>Memoria RAM: 8 GB DDR4</li>
+                        <li>Gráficos: Intel UHD</li>
+                        <li>Almacenamiento: 256 GB M.2 NVMe</li>
+                        <li>Conectividad: Wi-Fi 6 y Bluetooth 5.2</li>
+                    </ul>
+
+                    <p class="precio"><del>₡279.900</del> ₡199.900</p>
+
+                    <a href="https://wa.me/50687594465?text=Hola,%20me%20interesa%20la%20laptop%20HP%2015t-fd000" class="btn-whatsapp" target="_blank"  rel=" noopener noreferrer "  >
+                        Consulta por WhatsApp
+                    </a>
+                </div>
+            </article>
+
+            
+
+
+            <!-- CATEGORÍA: ACCESORIOS -->
+
+            <article class="producto-card" data-categoria="Accesorios">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNUihHpUFrjWJoXieX8NMf82EfOC8Dw5-xDZTYGdedHQ&s=10" alt="Audífonos Redragon H260" class="producto-imagen">
+
+                <div class="producto-info">
+                    <h2 class="Producto-titulo">Redragon H260 RGB Hylas Blanco</h2>
+
+                    <ul class="descripcion">
+                        <li>Marca: Redragon</li>
+                        <li>Audio estéreo</li>
+                        <li>Conexión: 3.5 mm y USB</li>
+                        <li>Micrófono con cancelación de ruido</li>
+                        <li>Compatibles con consolas, PC y laptops</li>
+                        <li>Iluminación RGB</li>
+                    </ul>
+
+                    <p class="precio">₡7.000</p>
+
+                    <a href="https://wa.me/50687594465?text=Hola,%20me%20interesan%20los%20audifonos%20Redragon" class="btn-whatsapp" target="_blank"  rel=" noopener noreferrer "  >
+                        Consulta por WhatsApp
+                    </a>
+                </div>
+            </article>
+
+            <article class="producto-card" data-categoria="Accesorios">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiEFkeW-gCSsiI5WpMv7Y1QD82AmEKgJjKubqOrJbh8w&s=10" alt="Mousepad Unno Tekno" class="producto-imagen">
+
+                <div class="producto-info">
+                    <h2 class="Producto-titulo">Mousepad Unno Tekno Dynamia Verde</h2>
+
+                    <ul class="descripcion">
+                        <li>Superficie de tela duradera y de baja fricción</li>
+                        <li>Material: caucho natural</li>
+                        <li>Base antideslizante</li>
+                        <li>Dimensiones: 8.5 x 7.0 x 0.2 pulgadas</li>
+                    </ul>
+
+                    <p class="precio">₡2.000</p>
+
+                    <a href="https://wa.me/50687594465?text=Hola,%20me%20interesa%20el%20mousepad%20Unno%20Tekno" class="btn-whatsapp" target="_blank"  rel=" noopener noreferrer ">
+                        Consulta por WhatsApp
+                    </a>
+                </div>
+            </article>
+
+            <article class="producto-card" data-categoria="Accesorios">
+                <img src="https://mmstoreperu.com/cdn/shop/files/TECLADO_RAZER_BLACKWIDOW_V4_75___INGLES___MECANICO___SW-ORANGE___RGB___BLANCO_1000x.png?v=1749154819" alt="Teclado Razer Blackwidow" class="producto-imagen">
+
+                <div class="producto-info">
+                    <h2 class="Producto-titulo">Razer Blackwidow V4 75% Blanco</h2>
+
+                    <ul class="descripcion">
+                        <li>Marca: Razer</li>
+                        <li>Tipo de teclado: mecánico</li>
+                        <li>Iluminación RGB</li>
+                        <li>Switch Razer Tactile</li>
+                        <li>Distribución en inglés</li>
+                    </ul>
+
+                    <p class="precio">₡86.700</p>
+
+                    <a href="https://wa.me/50687594465?text=Hola,%20me%20interesa%20el%20teclado%20Razer" class="btn-whatsapp" target="_blank"  rel=" noopener noreferrer ">
+                        Consulta por WhatsApp
+                    </a>
+                </div>
+            </article>
+
+            <!-- CATEGORÍA: COMPONENTES -->
+
+            <article class="producto-card" data-categoria="componentes">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9UEbC5r_syQiwUnDac61HZ-0n5MGu5wuVO-eYE-FVnw&s=10" alt="Base enfriadora Argom" class="producto-imagen">
+
+                <div class="producto-info">
+                    <h2 class="Producto-titulo">Base Enfriadora Argom</h2>
+
+                    <ul class="descripcion">
+                        <li>Construcción metálica con soporte ajustable</li>
+                        <li>Ventilador de 120 mm y 1000 RPM</li>
+                        <li>Controles y puertos USB integrados</li>
+                        <li>Peso: 1062 g</li>
+                        <li>Voltaje: 5 VDC</li>
+                    </ul>
+
+                    <p class="precio">₡5.000</p>
+
+                    <a href="https://wa.me/50687594465?text=Hola,%20me%20interesa%20la%20base%20enfriadora%20Argom" class="btn-whatsapp" target="_blank"  rel=" noopener noreferrer ">
+                        Consulta por WhatsApp
+                    </a>
+                </div>
+            </article>
+
+            <article class="producto-card" data-categoria="componentes">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnFDjs612jq6C44AsyzoZOu2D_rQX-jOt5Piw4Bh-Ycw&s=10" alt="Cooler Pure Rock 3 Silver AMD" class="producto-imagen">
+
+                <div class="producto-info">
+                    <h2 class="Producto-titulo">Pure Rock 3 Silver AMD</h2>
+
+                    <ul class="descripcion">
+                        <li>Tamaño del ventilador: 120 mm</li>
+                        <li>Compatible con AMD AM4 y AM5</li>
+                        <li>Diseño compacto en color plata</li>
+                        <li>Ventilador Pure Wings 3</li>
+                    </ul>
+
+                    <p class="precio">₡14.300</p>
+
+                    <a href="https://wa.me/50687594465?text=Hola,%20me%20interesa%20el%20cooler%20Pure%20Rock%203" class="btn-whatsapp" target="_blank"  rel=" noopener noreferrer ">
+                        Consulta por WhatsApp
+                    </a>
+                </div>
+            </article>
+
+            <article class="producto-card" data-categoria="componentes">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSok6K0wnsmDjtjt_6Yrpkty6m6vRtn2-TxJIbDYNv80_ci-GDBSO1xYUE&s=10" alt="Destornillador Xiaomi" class="producto-imagen">
+
+                <div class="producto-info">
+                    <h2 class="Producto-titulo">Destornillador inalámbrico Xiaomi Mi Cordless Screwdriver</h2>
+
+                    <ul class="descripcion">
+                        <li>Motor magnético de 5 N·m</li>
+                        <li>Batería de 2000 mAh con carga USB-C</li>
+                        <li>Incluye 12 brocas S2 y luz LED</li>
+                        <li>Diseño compacto e inalámbrico</li>
+                    </ul>
+
+                    <p class="precio">₡22.000</p>
+
+                    <a href="https://wa.me/50687594465?text=Hola,%20me%20interesa%20el%20destornillador%20Xiaomi" class="btn-whatsapp" target="_blank"  rel=" noopener noreferrer ">
+                        Consulta por WhatsApp
+                    </a>
+                </div>
+            </article>
+
+        </section>
+
+        <p id="sin-resultados" hidden>No hay productos en esta categoría.</p>
+        <footer>
+  <!-- Dirección física -->
+  <p><strong>Dirección:</strong> 100 metros del parque de Atenas</p>
+
+  <!-- Enlace de Correo Electrónico -->
+  <p><strong>Correo:</strong> 
+    <a href="TecnoPuntoAtenas@gmail.com">TecnoPuntoAtenas@gmail.com</a>
+  </p>
+
+  <!-- Enlace directo a WhatsApp -->
+  <p><strong>WhatsApp:</strong> 
+    <a href="https://wa.me" target="_blank" rel="noopener noreferrer">
+      Enviar un mensaje
+    </a>
+  </p>
+</footer>
+
+    </main>
+
+    <script>
+        const botones = document.querySelectorAll(".filtro-btn");
+        const productos = document.querySelectorAll(".producto-card");
+        const contador = document.querySelector("#contador-productos");
+        const mensajeVacio = document.querySelector("#sin-resultados");
+
+        function filtrarProductos(categoria) {
+            let cantidad = 0;
+
+            productos.forEach((producto) => {
+                const coincide =
+                    categoria === "todos" ||
+                    producto.dataset.categoria === categoria;
+
+                producto.hidden = !coincide;
+
+                if (coincide) {
+                    cantidad++;
+                }
+            });
+
+            botones.forEach((boton) => {
+                const seleccionado = boton.dataset.categoria === categoria;
+
+                boton.classList.toggle("activo", seleccionado);
+                boton.setAttribute("aria-pressed", seleccionado);
+            });
+
+            contador.textContent = `Mostrando ${cantidad} productos`;
+            mensajeVacio.hidden = cantidad !== 0;
+        }
+
+        botones.forEach((boton) => {
+            boton.addEventListener("click", () => {
+                filtrarProductos(boton.dataset.categoria);
+            });
+        });
+
+        filtrarProductos("todos");
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,450 @@
+
+@font-face {
+    font-family: "Black Mango";
+    src: local("Black Mango");
+    font-weight: normal;
+    font-display: swap;
+}
+
+:root {
+    --turquesa: #0097B2;
+    --gris-claro: #D9D9D9;
+    --blanco: #FFFFFF;
+    --gris-oscuro: #333333;
+    --gris-medio: #666666;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: var(--gris-oscuro);
+    background-color: var(--blanco);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ENCABEZADO */
+
+.encabezado {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Alineación horizontal de todo el contenido */
+.encabezado-contenido {
+    display: flex;
+    justify-content: space-between; /* Envía la marca a la izquierda y el menú a la derecha */
+    align-items: center;            /* Centra verticalmente el logo, título y enlaces */
+    max-width: 1200px;              /* Ajusta según el ancho máximo de tu web */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Agrupa el logotipo y el texto del título en una sola línea */
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 15px;                      /* Espacio de separación entre el logo y el texto */
+}
+
+/* Controla el tamaño de tu logotipo */
+.logo {
+    display: inline-flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    display: block;
+}
+/* Estilo para el título al lado del logo */
+.nombre-tienda {
+    font-family: sans-serif;        /* Usa la tipografía de tu preferencia */
+    font-size: 24px;
+    margin: 0;
+    color: #333333;
+}
+
+/* Contenedor de los enlaces del menú */
+.navbar {
+    display: flex;
+    gap: 20px;                      /* Espacio de separación horizontal entre cada enlace */
+}
+
+/* Estilo individual de los enlaces */
+.navbar a {
+    text-decoration: none;
+    color: #4b2597;                 /* El tono morado que se muestra en tu imagen */
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+/* Efecto al pasar el cursor sobre los enlaces */
+.navbar a:hover, 
+.navbar a.active {
+    color: #0093ab;                 /* Cambia a azul aqua (o tu color secundario) al seleccionarlo */
+}
+
+/* PORTADA */
+
+.portada {
+    background-color: var(--turquesa);
+    color: var(--blanco);
+    padding: 85px 0;
+    text-align: center;
+}
+
+.etiqueta {
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.portada h1 {
+    font-family: "Black Mango", "Montserrat", sans-serif;
+    font-size: clamp(35px, 5vw, 55px);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.descripcion-portada {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    font-size: 16px;
+}
+
+.boton {
+    display: inline-block;
+    padding: 13px 25px;
+    background-color: var(--blanco);
+    color: var(--turquesa);
+    border: 2px solid var(--blanco);
+    border-radius: 7px;
+    font-weight: 800;
+    font-size: 14px;
+    transition: background-color 0.3s, color 0.3s,
+                transform 0.3s;
+}
+
+.boton:hover {
+    background-color: transparent;
+    color: var(--blanco);
+    transform: translateY(-2px);
+}
+
+/* SERVICIOS */
+
+.servicios {
+    background-color: var(--gris-claro);
+    padding: 75px 0;
+}
+
+.titulo-seccion {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.titulo-seccion h2 {
+    color: var(--turquesa);
+    font-family: "Black Mango", "Montserrat", sans-serif;
+    font-size: clamp(27px, 4vw, 36px);
+    margin-bottom: 10px;
+}
+
+.titulo-seccion p {
+    color: var(--gris-medio);
+    font-size: 15px;
+}
+
+.lista-servicios {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.tarjeta-servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--blanco);
+    padding: 30px;
+    border: 1px solid #C8C8C8;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta-servicio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.icono {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--turquesa);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.icono svg {
+    width: 32px;
+    height: 32px;
+    fill: none;
+    stroke: var(--blanco);
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.tarjeta-servicio h3 {
+    color: var(--turquesa);
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+
+.tarjeta-servicio > p:not(.precio) {
+    font-size: 14px;
+    color: var(--gris-medio);
+    margin-bottom: 20px;
+}
+
+.tarjeta-servicio .precio {
+    margin-top: auto;
+    padding-top: 15px;
+    color: var(--turquesa);
+    font-size: 14px;
+    font-weight: 800;
+}
+
+/* LLAMADA A LA ACCIÓN */
+
+.llamada {
+    background-color: var(--turquesa);
+    color: var(--blanco);
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.llamada h2 {
+    font-family: "Black Mango", "Montserrat", sans-serif;
+    font-size: clamp(25px, 4vw, 35px);
+    margin-bottom: 15px;
+}
+
+.llamada p {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    font-size: 15px;
+}
+
+.boton-blanco {
+    background-color: var(--blanco);
+    color: var(--turquesa);
+}
+
+.boton-blanco:hover {
+    background-color: transparent;
+    color: var(--blanco);
+}
+
+
+/* PIE DE PÁGINA */
+footer {
+  background-color: var(--turquesa); /* Fondo oscuro elegante */
+  color: #ffffff;            /* Texto blanco */
+  padding: 30px 20px;        /* Espaciado interno (arriba/abajo y lados) */
+  text-align: center;        /* Centra todo el contenido */
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+/* Contenedor interno para organizar los elementos */
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;            /* Centra el contenedor en la pantalla */
+  display: flex;
+  flex-direction: column;    /* Organiza los elementos en fila vertical */
+  gap: 12px;                 /* Separa los párrafos uniformemente */
+}
+
+/* Estilos para los textos del pie de página */
+footer p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Estilos base para todos los enlaces del footer */
+footer a {
+  color: #00adb5;            /* Color azul turquesa llamativo */
+  text-decoration: none;     /* Quita la línea de subrayado predeterminada */
+  transition: color 0.3s ease; /* Suaviza el cambio de color al pasar el cursor */
+}
+
+/* Efecto al pasar el cursor sobre los enlaces */
+footer a:hover {
+  color: var(--blanco);            /* El azul se oscurece un poco */
+  text-decoration: none; /* Aparece el subrayado */
+}
+
+/* Estilo específico para resaltar el enlace de WhatsApp */
+footer a[href^="https://wa.me"] {
+  color: #25d366;            /* Verde oficial de WhatsApp */
+  font-weight: bold;
+}
+
+/* Efecto específico al pasar el cursor sobre WhatsApp */
+footer a[href^="https://wa.me"]:hover {
+  color: #128c7e;            /* Verde oscuro de WhatsApp */
+}
+
+.pie {
+    background-color: var(--gris-oscuro);
+    color: var(--blanco);
+    text-align: center;
+    padding: 25px 15px;
+    font-size: 13px;
+}
+
+.eslogan {
+    color: var(--gris-claro);
+    margin-top: 5px;
+}
+
+/* TABLET */
+
+@media (max-width: 850px) {
+    .encabezado-contenido {
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px 0;
+        gap: 15px;
+    }
+
+    .navegacion {
+        justify-content: center;
+        gap: 15px 22px;
+    }
+
+    .lista-servicios {
+        gap: 18px;
+    }
+
+    .tarjeta-servicio {
+        padding: 23px;
+    }
+}
+
+/* CELULARES */
+
+@media (max-width: 600px) {
+    .contenedor {
+        width: 92%;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .navegacion {
+        gap: 10px 16px;
+    }
+
+    .navegacion a {
+        font-size: 12px;
+    }
+
+    .portada {
+        padding: 60px 0;
+    }
+
+    .descripcion-portada {
+        font-size: 14px;
+    }
+
+    .servicios {
+        padding: 50px 0;
+    }
+
+    .titulo-seccion {
+        margin-bottom: 28px;
+    }
+
+    .lista-servicios {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .tarjeta-servicio {
+        padding: 25px;
+    }
+
+    .tarjeta-servicio h3 {
+        font-size: 19px;
+    }
+
+    .llamada {
+        padding: 50px 15px;
+    }
+}
+
+/* CELULARES PEQUEÑOS */
+
+@media (max-width: 360px) {
+    .navegacion {
+        gap: 10px;
+    }
+
+    .navegacion a {
+        font-size: 11px;
+    }
+
+    .tarjeta-servicio {
+        padding: 20px;
+    }
+}
+.encabezado .contenedor .logo {
+    display: inline-flex;
+    width: 65px;
+    height: 65px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.encabezado .contenedor .logo img {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 65px;
+    max-height: 65px;
+    object-fit: contain;
+}
